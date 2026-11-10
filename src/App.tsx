@@ -78,12 +78,11 @@ export default function App() {
       <Navbar
         isDark={isDark}
         onToggleTheme={handleToggleTheme}
-        onOpenExportModal={() => setIsExportModalOpen(true)}
       />
 
       {/* Main Content Sections */}
       <main>
-        <HeroSection onOpenExportModal={() => setIsExportModalOpen(true)} />
+        <HeroSection />
         
         <ExperienceSection
           experienceList={experienceList}
